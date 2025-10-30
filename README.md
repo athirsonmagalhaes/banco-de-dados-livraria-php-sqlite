@@ -1,4 +1,4 @@
-# 📚 CRUD Livraria com PHP e SQLite
+# 📚 Banco de dados de Livraria com PHP e SQLite
 
 Este é um projeto simples de CRUD (Create, Read, Update, Delete) para gerenciar um catálogo de livros. Ele utiliza PHP para o backend (lógica de banco de dados) e JavaScript/HTML/CSS para o frontend. O banco de dados é um arquivo SQLite.
 
@@ -14,11 +14,11 @@ Para executar este projeto, você precisa de um ambiente que possa interpretar P
 
 1.  **Clone o Repositório**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/crud-livraria-sqlite-php.git](https://github.com/SEU-USUARIO/crud-livraria-sqlite-php.git)
+    git clone [https://github.com/athirsonmagalhaes/banco-de-dados-livraria-php-sqlite.git](https://github.com/athirsonmagalhaes/banco-de-dados-livraria-php-sqlite.git)
     ```
 
 2.  **Mova para a Pasta do Servidor**
-    Mova a pasta clonada (`crud-livraria-sqlite-php`) para o diretório de documentos do seu servidor web (ex: `htdocs` no XAMPP, `www` no WAMP).
+    Mova a pasta clonada (`banco-de-dados-livraria-php-sqlite`) para o diretório de documentos do seu servidor web (ex: `htdocs` no XAMPP, `www` no WAMP).
 
 3.  **Inicie o Servidor Local**
     Certifique-se de que os módulos **Apache** e **PHP** estão rodando.
@@ -26,7 +26,7 @@ Para executar este projeto, você precisa de um ambiente que possa interpretar P
 4.  **Acesse o Projeto no Navegador**
     Abra seu navegador e acesse:
     ```
-    http://localhost/crud-livraria-sqlite-php/index.php
+    http://localhost/banco-de-dados-livraria-php-sqlite/index.php
     ```
 
     > ⚠️ **Nota:** Na primeira vez que você acessar a página, o código PHP irá automaticamente criar o arquivo de banco de dados `livraria.db` no mesmo diretório.
