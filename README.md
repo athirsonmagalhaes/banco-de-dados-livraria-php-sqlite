@@ -1,39 +1,49 @@
 # 📚 Banco de dados de Livraria com PHP e SQLite
 
-Este é um projeto simples de CRUD (Create, Read, Update, Delete) para gerenciar um catálogo de livros. Ele utiliza PHP para o backend (lógica de banco de dados) e JavaScript/HTML/CSS para o frontend. O banco de dados é um arquivo SQLite.
+Projeto simples de CRUD (Create, Read, Update, Delete) para gerenciar um catálogo de livros. Ele foi desenvolvido com **PHP puro**, utilizando **SQLite** para o banco de dados. Toda a funcionalidade e interface estão contidas em um único arquivo PHP (`index.php`), o que facilita a configuração e execução.
 
-## ⚙️ Pré-requisitos
+## ✨ Funcionalidades
 
-Para executar este projeto, você precisa de um ambiente que possa interpretar PHP e servir arquivos web. O mais comum é usar um servidor local como XAMPP, WAMP ou MAMP.
+* **Registro de Livros:** Adicionar um novo livro com Título, Autor e Ano de Publicação.
+* **Listagem de Dados:** Exibir todos os livros registrados em uma tabela.
+* **Edição (Update):** Carregar os dados de um livro na área de formulário para modificação.
+* **Exclusão (Delete):** Remover permanentemente um registro do banco de dados.
+* **Banco de Dados Integrado:** Utiliza SQLite (`livraria.db`), sendo leve e não exigindo um servidor de banco de dados externo.
 
-* **Servidor Web:** Apache (geralmente incluído no XAMPP/WAMP/MAMP).
+## 🛠️ Tecnologias Utilizadas
+
+* **Linguagem Backend:** PHP
+* **Banco de Dados:** SQLite (via PDO - PHP Data Objects)
+* **Interface:** HTML, CSS básico e JavaScript (para interações assíncronas `fetch` sem recarregar a página).
+
+## 🚀 Como Executar o Projeto
+
+Para rodar este projeto, você precisa de um ambiente de servidor web que possa processar arquivos PHP. **XAMPP**, **WAMP** ou **MAMP** são as opções mais recomendadas.
+
+### 1. Requisitos
+
 * **PHP:** Versão 7.x ou superior.
-* **Extensão PDO SQLite:** A extensão `php_pdo_sqlite` precisa estar habilitada no seu arquivo `php.ini` (geralmente já está ativada por padrão nesses pacotes de servidores locais).
+* **Extensão PDO SQLite:** A extensão `pdo_sqlite` precisa estar habilitada no seu arquivo de configuração `php.ini`. (Geralmente vem ativada por padrão nos pacotes de servidores locais).
 
-## 🚀 Como Executar
+### 2. Configuração
 
-1.  **Clone o Repositório**
+1.  **Clone o Repositório:**
     ```bash
     git clone [https://github.com/athirsonmagalhaes/banco-de-dados-livraria-php-sqlite.git](https://github.com/athirsonmagalhaes/banco-de-dados-livraria-php-sqlite.git)
+    cd banco-de-dados-livraria-php-sqlite
     ```
 
-2.  **Mova para a Pasta do Servidor**
-    Mova a pasta clonada (`banco-de-dados-livraria-php-sqlite`) para o diretório de documentos do seu servidor web (ex: `htdocs` no XAMPP, `www` no WAMP).
+2.  **Posicione os Arquivos:**
+    * Mova a pasta clonada (`banco-de-dados-livraria-php-sqlite`) para o diretório raiz de documentos do seu servidor web (por exemplo, a pasta `htdocs` do XAMPP ou `www` do WAMP).
 
-3.  **Inicie o Servidor Local**
-    Certifique-se de que os módulos **Apache** e **PHP** estão rodando.
+3.  **Acesse no Navegador:**
+    * Inicie o servidor Apache (e o PHP).
+    * Abra o navegador e acesse o projeto através da URL:
+        ```
+        http://localhost/banco-de-dados-livraria-php-sqlite/index.php
+        ```
 
-4.  **Acesse o Projeto no Navegador**
-    Abra seu navegador e acesse:
-    ```
-    http://localhost/banco-de-dados-livraria-php-sqlite/index.php
-    ```
+### 3. Sobre o Banco de Dados
 
-    > ⚠️ **Nota:** Na primeira vez que você acessar a página, o código PHP irá automaticamente criar o arquivo de banco de dados `livraria.db` no mesmo diretório.
-
-## 💾 Detalhes do Projeto
-
-* **Arquivo Único:** `index.php`
-* **Banco de Dados:** `livraria.db` (SQLite)
-* **Tabela:** `livros` (id, livro, autor, ano)
-* **Operações:** As funções de CRUD são gerenciadas pelo PHP, sendo acionadas por requisições `fetch` do JavaScript, que passam o parâmetro `?action=` na URL.
+* O script PHP contido em `index.php` é configurado para criar e se conectar automaticamente ao banco de dados chamado **`livraria.db`**.
+* Se o arquivo **`livraria.db`** não existir, ele será criado automaticamente na primeira vez que você acessar a página.
