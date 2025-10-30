@@ -1,4 +1,4 @@
-# 📚 Banco de dados de Livraria com PHP e SQLite
+# 📚 Banco de dados de Livraria
 
 Projeto simples de CRUD (Create, Read, Update, Delete) para gerenciar um catálogo de livros. Ele foi desenvolvido com **PHP puro**, utilizando **SQLite** para o banco de dados. Toda a funcionalidade e interface estão contidas em um único arquivo PHP (`index.php`), o que facilita a configuração e execução.
 
@@ -29,8 +29,9 @@ Para rodar este projeto, você precisa de um ambiente de servidor web que possa 
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [https://github.com/athirsonmagalhaes/banco-de-dados-livraria-php-sqlite.git](https://github.com/athirsonmagalhaes/banco-de-dados-livraria-php-sqlite.git)
+    git clone https://github.com/athirsonmagalhaes/banco-de-dados-livraria-php-sqlite.git
     cd banco-de-dados-livraria-php-sqlite
+    
     ```
 
 2.  **Posicione os Arquivos:**
